@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Remover</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Background Remover</h1>
+  <div id="drop-area" ondragover="event.preventDefault();" ondrop="handleDrop(event);">
+    <p>Drop an image here or click to upload</p>
+    <input type="file" id="file-input" accept="image/*" onchange="handleFiles(this.files)">
+  </div>
+  <div id="image-preview"></div>
+  <button id="download-button" onclick="downloadImage()">Download Image</button>
+</div>
+</body>
+</html>
