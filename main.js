@@ -12,7 +12,7 @@ function handleDrop(event) {
     fetch('https://api.remove.bg/v1.0/removebg', {
       method: 'POST',
       headers: {
-        'X-Api-Key': 'nVyYpVaAcAnEiJg6NLdF3qVF', // Replace with your actual Remove.bg API key
+        'X-Api-Key': 'qjmaQ4Zv4oNowWMuLMJJHFDV', // Replace with your actual Remove.bg API key
       },
       body: formData,
     })
